@@ -122,3 +122,27 @@ h1 {
   margin-bottom: 5px;
 }
 
+/* Make the game responsive on small screens */
+@media (max-width: 600px) {
+  #cellContainer {
+    grid-template-columns: repeat(3, 80px); /* smaller cells */
+    gap: 5px;
+  }
+
+  .cell {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .controls button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+}
+
+
