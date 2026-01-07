@@ -17,7 +17,7 @@
     <!-- Show turn and score -->
     <section class="hud">
       <!-- Show who plays now -->
-      <div>Turn: <span id="statusText">X's turn</span></div>
+      <div>Turn: <span id="statusText" aria-live="polite">X's turn</span></div>
       <!-- Show the scores -->
       <div class="scores">
         <span>X Wins: <strong id="scoreX">0</strong></span>
@@ -47,10 +47,18 @@
 
     <!-- Simple text that explains the game -->
     <section class="about">
-      <h2>How to play</h2>
-      <p>Players take turns clicking empty cells. The first to align three marks (row, column, or diagonal) wins.
-        The score and the current game are stored in your browser using <code>localStorage</code>.</p>
-    </section>
+  <h2>How to play</h2>
+  <p>
+    This is a simple two-player game played on the same device. 
+    One player is <strong>X</strong> and the other is <strong>O</strong>. 
+    You cannot play against the computer.
+  </p>
+  <p>
+    Players take turns clicking empty cells. The first to align three marks 
+    (in a row, column, or diagonal) wins. The current game and the scores are 
+    stored in your browser using <code>localStorage</code>.
+  </p>
+</section>
   </main>
 
   <!-- Link to the JavaScript file -->
